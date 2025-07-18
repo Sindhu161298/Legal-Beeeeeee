@@ -23,7 +23,7 @@ mongoose.connect(process.env.MONGODB_URI, {
 
 // ROUTES
 const authRoutes = require('./routes/auth');
-const googleAuthRoutes = require('./routes/googleauth'); // Optional
+const googleAuthRoutes = require('./routes/googleAuth'); // Optional
 const chatRoutes = require('./routes/chat');
 const feedbackRoutes = require('./routes/feedback');
 const saveRoutes = require('./routes/save'); // ✅ NEW — for saved answers
