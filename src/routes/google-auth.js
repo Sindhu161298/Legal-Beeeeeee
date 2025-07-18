@@ -45,4 +45,4 @@ router.get('/google/callback',
   })
 );
 
-export default router;
+const googleAuthRoutes = require('./routes/google-auth');
