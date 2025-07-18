@@ -1,6 +1,6 @@
-import express from 'express';
-import passport from 'passport';
-import { Strategy as GoogleStrategy } from 'passport-google-oauth20';
+const express = require('express');
+const passport = require('passport');
+const GoogleStrategy = require('passport-google-oauth20').Strategy;
 
 const router = express.Router();
 
@@ -45,4 +45,4 @@ router.get('/google/callback',
   })
 );
 
-module.exports = router;
+module.exports = router; // ✅ Correct export
