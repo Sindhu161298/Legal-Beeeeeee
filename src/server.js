@@ -22,11 +22,11 @@ mongoose.connect(process.env.MONGODB_URI, {
   .catch((err) => console.error("MongoDB connection error:", err));
 
 // ROUTES
-const authRoutes = require('./routes/auth');
-const googleAuthRoutes = require('./routes/googleAuth'); // Optional
-const chatRoutes = require('./routes/chat');
-const feedbackRoutes = require('./routes/feedback');
-const saveRoutes = require('./routes/save'); // ✅ NEW — for saved answers
+const authRoutes = require('./routes/auth.cjs');
+const googleAuthRoutes = require('./routes/googleAuth.cjs');
+const chatRoutes = require('./routes/chat.cjs');
+const feedbackRoutes = require('./routes/feedback.cjs');
+const saveRoutes = require('./routes/save.cjs');
 
 // Mount Routes
 app.use('/api/auth', authRoutes);
