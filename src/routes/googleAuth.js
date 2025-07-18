@@ -45,4 +45,5 @@ router.get('/google/callback',
   })
 );
 
-module.exports = router; // ✅ Ensure this is CommonJS
+module.exports = router;
+
